@@ -2,7 +2,7 @@ const Model = require('../models/Model');
 
 class Controller {
     static home(req, res) {
-        res.render('home')
+        res.render('newHome')
     }
     static encryptForm(req, res) {
         res.render('encrypt');
