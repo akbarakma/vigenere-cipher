@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <style>
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            line-height: 30px;
+            letter-spacing: 3px;
+        }
+        .container-inner {
+            max-width: 600px;
+            min-height: 400px;
+            margin: auto;
+        }
+    </style>
+
+    <title>Vigenere Cipher</title>
+  </head>
+
+  <body class="bg-dark">
+    <div class="container mb-5">
+        
+    <!-- Header -->
+    <h1 class="text-center text-light my-5">Vigenere Cipher</h1>
+    <p class="text-center text-light my-5">
+        Vigenere Cipher is a method of encrypting alphabetic text. 
+        It uses a simple form of polyalphabetic substitution. <br>
+        To use this cipher, you need to first determine a keyword that would be used for the encryption/decryption.
+    </p>
+    <div class="container-inner">
+        <form action="" method="POST">
+            <div class="form-group">
+              <label for="input" class="text-light">Input</label>
+              <textarea class="form-control bg-secondary text-light" id="input" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="keyword" class="text-light">Keyword</label>
+              <input type="text" class="form-control bg-secondary text-light" id="keyword">
+            </div>
+
+            <div class="mt-4 mb-2" style="max-width: 80px; margin: auto;">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="option" id="inlineRadio1" value="encrypt">
+                    <label class="form-check-label text-light" for="inlineRadio1">Encrypt&nbsp;</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="option" id="inlineRadio2" value="decrypt">
+                    <label class="form-check-label text-light" for="inlineRadio2">Decrypt</label>
+                </div>
+            </div>
+
+            <div class="mb-3" style="max-width: 200px; margin: auto;">
+                <input class="btn btn-outline-light btn-block " type="submit" value="Vigenere It!" class="mx-a">
+            </div>
+                
+            <div class="form-group">
+              <label for="output" class="text-light">Output</label>
+              <textarea class="form-control bg-dark text-light" id="output" rows="3" readonly></textarea>
+            </div>
+            
+          </form>
+    </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--     
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     -->
+  </body>
+</html>
